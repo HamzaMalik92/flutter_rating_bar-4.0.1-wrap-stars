@@ -224,10 +224,8 @@ class _RatingBarState extends State<RatingBar> {
 
     return Material(
       color: Colors.transparent,
-      child: Wrap(
-        alignment: widget.wrapAlignment,
-        textDirection: textDirection,
-        direction: widget.direction,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(
           widget.itemCount,
           (index) => _buildRating(context, index),
