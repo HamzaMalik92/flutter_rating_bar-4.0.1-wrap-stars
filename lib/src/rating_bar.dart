@@ -258,8 +258,7 @@ class _RatingBarState extends State<RatingBar> {
           unratedColor: widget.unratedColor ?? Theme.of(context).disabledColor,
         );
       } else {
-        _ratingWidget = Container(
-                    color: Colors.red,
+        _ratingWidget = SizedBox(
           width: widget.itemSize,
           height: widget.itemSize,
           child: FittedBox(
